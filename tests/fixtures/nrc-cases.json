@@ -1,0 +1,184 @@
+[
+  {
+    "input": "12/LaMaNa(N)001234",
+    "en": "12/LaMaNa(N)001234",
+    "mm": "၁၂/လမန(နိုင်)၀၀၁၂၃၄",
+    "language": "en"
+  },
+  {
+    "input": "၁၂/လမန(နိုင်)၀၀၁၂၃၄",
+    "en": "12/LaMaNa(N)001234",
+    "mm": "၁၂/လမန(နိုင်)၀၀၁၂၃၄",
+    "language": "mm"
+  },
+  {
+    "input": " ၁2 / lamana ( Naing ) ၀0၁234 ",
+    "en": "12/LaMaNa(N)001234",
+    "mm": "၁၂/လမန(နိုင်)၀၀၁၂၃၄",
+    "language": "en"
+  },
+  {
+    "input": "12/လမန(Pyu)001234",
+    "en": "12/LaMaNa(P)001234",
+    "mm": "၁၂/လမန(ပြု)၀၀၁၂၃၄",
+    "language": "mm"
+  },
+  {
+    "input": "12/LaMaNa(ပြု)၀၀၁၂၃၄",
+    "en": "12/LaMaNa(P)001234",
+    "mm": "၁၂/လမန(ပြု)၀၀၁၂၃၄",
+    "language": "en"
+  },
+  {
+    "input": "12/LaMaNa(p)000000",
+    "en": "12/LaMaNa(P)000000",
+    "mm": "၁၂/လမန(ပြု)၀၀၀၀၀၀",
+    "language": "en"
+  },
+  {
+    "input": null,
+    "errors": [
+      "INVALID_INPUT_TYPE"
+    ]
+  },
+  {
+    "input": 123,
+    "errors": [
+      "INVALID_INPUT_TYPE"
+    ]
+  },
+  {
+    "input": "",
+    "errors": [
+      "INVALID_FORMAT"
+    ]
+  },
+  {
+    "input": "12/La MaNa(N)001234",
+    "errors": [
+      "INVALID_FORMAT"
+    ]
+  },
+  {
+    "input": "12/LaMaNa(N)001234\n<script>",
+    "errors": [
+      "INVALID_FORMAT"
+    ]
+  },
+  {
+    "input": "15/LaMaNa(N)001234",
+    "errors": [
+      "INVALID_STATE"
+    ]
+  },
+  {
+    "input": "012/LaMaNa(N)001234",
+    "errors": [
+      "INVALID_STATE"
+    ]
+  },
+  {
+    "input": "1/LaMaNa(N)001234",
+    "errors": [
+      "INVALID_TOWNSHIP"
+    ]
+  },
+  {
+    "input": "12/Unknown(N)001234",
+    "errors": [
+      "INVALID_TOWNSHIP"
+    ]
+  },
+  {
+    "input": "12/LaMaNa(E)001234",
+    "en": "12/LaMaNa(E)001234",
+    "mm": "၁၂/လမန(ဧည့်)၀၀၁၂၃၄",
+    "language": "en"
+  },
+  {
+    "input": "12/LaMaNa(N)12345",
+    "errors": [
+      "INVALID_SERIAL_LENGTH"
+    ]
+  },
+  {
+    "input": "12/LaMaNa(N)1234567",
+    "errors": [
+      "INVALID_SERIAL_LENGTH"
+    ]
+  },
+  {
+    "input": "12/LaMaNa(N)12x456",
+    "errors": [
+      "INVALID_FORMAT"
+    ]
+  },
+  {
+    "input": "15/Unknown(X)123",
+    "errors": [
+      "INVALID_STATE",
+      "INVALID_TYPE",
+      "INVALID_SERIAL_LENGTH"
+    ]
+  },
+  {
+    "input": " 12 /LaMaNa(N)001234　",
+    "en": "12/LaMaNa(N)001234",
+    "mm": "၁၂/လမန(နိုင်)၀၀၁၂၃၄",
+    "language": "en"
+  },
+  {
+    "input": "﻿12/LaMaNa(N)001234",
+    "errors": [
+      "INVALID_FORMAT"
+    ]
+  },
+  {
+    "input": "12/LaMaNa(N)001234",
+    "errors": [
+      "INVALID_FORMAT"
+    ]
+  },
+  {
+    "input": "12/LaMaNa(AE)001234",
+    "en": "12/LaMaNa(E)001234",
+    "mm": "၁၂/လမန(ဧည့်)၀၀၁၂၃၄",
+    "language": "en"
+  },
+  {
+    "input": "၁၂/လမန(ဧည့်)၀၀၁၂၃၄",
+    "en": "12/LaMaNa(E)001234",
+    "mm": "၁၂/လမန(ဧည့်)၀၀၁၂၃၄",
+    "language": "mm"
+  },
+  {
+    "input": "၁၂/လမန(ဧည့်)၀၀၁၂၃၄",
+    "en": "12/LaMaNa(E)001234",
+    "mm": "၁၂/လမန(ဧည့်)၀၀၁၂၃၄",
+    "language": "mm"
+  },
+  {
+    "input": "12/LaMaNa(m)001234",
+    "en": "12/LaMaNa(M)001234",
+    "mm": "၁၂/လမန(သ)၀၀၁၂၃၄",
+    "language": "en"
+  },
+  {
+    "input": "၁၂/လမန(သ)၀၀၁၂၃၄",
+    "en": "12/LaMaNa(M)001234",
+    "mm": "၁၂/လမန(သ)၀၀၁၂၃၄",
+    "language": "mm"
+  },
+  {
+    "input": "12/LaMaNa(သီ)001234",
+    "errors": [
+      "INVALID_TYPE"
+    ]
+  },
+  {
+    "input": "12/LaMaNa(Nun)001234",
+    "errors": [
+      "INVALID_TYPE"
+    ]
+  }
+]

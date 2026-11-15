@@ -1,0 +1,7 @@
+node_modules/
+vendor/
+dist/
+coverage/
+.phpunit.result.cache
+*.tgz
+.DS_Store

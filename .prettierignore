@@ -1,0 +1,8 @@
+node_modules/
+dist/
+coverage/
+package-lock.json
+# Preserve the checksummed snapshot and byte-identical cross-language fixtures/contracts.
+data/nrc.json
+tests/fixtures/nrc-cases.json
+CONTRACT.md

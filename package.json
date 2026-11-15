@@ -1,0 +1,114 @@
+{
+  "name": "@thuraaung2493/nrc-kit",
+  "version": "0.1.0",
+  "description": "Offline bilingual Myanmar NRC tools with optional React and Zod adapters",
+  "license": "ISC",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./react": {
+      "import": {
+        "types": "./dist/react/index.d.ts",
+        "default": "./dist/react/index.js"
+      },
+      "require": {
+        "types": "./dist/react/index.d.cts",
+        "default": "./dist/react/index.cjs"
+      }
+    },
+    "./zod": {
+      "import": {
+        "types": "./dist/zod/index.d.ts",
+        "default": "./dist/zod/index.js"
+      },
+      "require": {
+        "types": "./dist/zod/index.d.cts",
+        "default": "./dist/zod/index.cjs"
+      }
+    },
+    "./selector.css": "./src/react/selector.css"
+  },
+  "files": [
+    "dist",
+    "data",
+    "src/react/selector.css",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md",
+    "CONTRACT.md",
+    "RELEASING.md",
+    "VERIFICATION.md"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thuraaung2493/nrc-kit.git"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:core": "vitest run tests/core.test.ts",
+    "test:consumers": "node scripts/consumers.mjs",
+    "check": "npm run format:check && npm run lint && npm run typecheck && npm test && npm run build && npm run test:consumers && npm pack --dry-run",
+    "test:browser": "node scripts/browser.mjs",
+    "test:matrix": "node scripts/matrix.mjs",
+    "lint": "eslint . --max-warnings=0",
+    "lint:fix": "eslint . --fix --max-warnings=0",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0 || ^19.0.0",
+    "zod": "^4.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "zod": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.65.1",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/node": "^22.0.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "esbuild": "^0.27.7",
+    "eslint": "^10.15.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "globals": "^16.5.0",
+    "jsdom": "^26.1.0",
+    "prettier": "^3.10.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.62.0",
+    "tsup": "^8.5.0",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.72.2",
+    "vitest": "^3.2.4",
+    "zod": "^4.0.0"
+  }
+}

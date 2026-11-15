@@ -1,0 +1,26 @@
+.nrc-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: start;
+}
+
+.nrc-selector > div {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.nrc-selector select,
+.nrc-selector input {
+  font: inherit;
+  padding: 0.4rem;
+}
+
+.nrc-selector :focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+.nrc-selector [role='alert'] {
+  flex-basis: 100%;
+}

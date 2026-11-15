@@ -1,0 +1,152 @@
+{
+  "states": [
+    {
+      "stateNo": 1,
+      "en": "Kachin",
+      "mm": "ကချင်ပြည်နယ်"
+    },
+    {
+      "stateNo": 2,
+      "en": "Kayah",
+      "mm": "ကယားပြည်နယ်"
+    },
+    {
+      "stateNo": 3,
+      "en": "Kayin",
+      "mm": "ကရင်ပြည်နယ်"
+    },
+    {
+      "stateNo": 4,
+      "en": "Chin",
+      "mm": "ချင်းပြည်နယ်"
+    },
+    {
+      "stateNo": 5,
+      "en": "Sagaing",
+      "mm": "စစ်ကိုင်းတိုင်း"
+    },
+    {
+      "stateNo": 6,
+      "en": "Tanintharyi",
+      "mm": "တနင်္သာရီတိုင်း"
+    },
+    {
+      "stateNo": 7,
+      "en": "Bago",
+      "mm": "ပဲခူးတိုင်း"
+    },
+    {
+      "stateNo": 8,
+      "en": "Magway",
+      "mm": "မကွေးတိုင်း"
+    },
+    {
+      "stateNo": 9,
+      "en": "Naypyidaw",
+      "mm": "နေပြည်တော်",
+      "townships": [
+        "UTaTha",
+        "ZaYaTha",
+        "PaBaTha",
+        "TaKaNa",
+        "DaKhaTha",
+        "ZaBaTha",
+        "PaMaNa",
+        "LaWaNa"
+      ]
+    },
+    {
+      "stateNo": 9,
+      "en": "Mandalay",
+      "mm": "မန္တလေးတိုင်း",
+      "townships": [
+        "MaNaMa",
+        "AMaZa",
+        "MaRaMa",
+        "KhaAZa",
+        "MaNaTa",
+        "KhaMaSa",
+        "MaRaTa",
+        "MaHaMa",
+        "PaKaKha",
+        "AMaYa",
+        "PaThaKa",
+        "MaMaNa",
+        "PaULa",
+        "MaTaRa",
+        "SaKaNa",
+        "ThaPaKa",
+        "MaKaNa",
+        "TaKaTa",
+        "KaHsaNa",
+        "SaKaTa",
+        "MaThaNa",
+        "TaTaU",
+        "MaKhaNa",
+        "TaThaNa",
+        "KaPaTa",
+        "NaHtaKa",
+        "NjaUNa",
+        "NgaZaNa",
+        "NgaThaRa",
+        "MaHtaLa",
+        "MaLaNa",
+        "ThaSaNa",
+        "WaTaNa",
+        "RaMaTha",
+        "PaBaNa"
+      ]
+    },
+    {
+      "stateNo": 10,
+      "en": "Mon",
+      "mm": "မွန်ပြည်နယ်"
+    },
+    {
+      "stateNo": 11,
+      "en": "Rakhine",
+      "mm": "ရခိုင်ပြည်နယ်"
+    },
+    {
+      "stateNo": 12,
+      "en": "Yangon",
+      "mm": "ရန်ကုန်တိုင်း"
+    },
+    {
+      "stateNo": 13,
+      "en": "Shan",
+      "mm": "ရှမ်းပြည်နယ်"
+    },
+    {
+      "stateNo": 14,
+      "en": "Ayeyarwady",
+      "mm": "ဧရာဝတီတိုင်း"
+    }
+  ],
+  "types": [
+    {
+      "en": "N",
+      "mm": "နိုင်",
+      "label": "Full Citizen (Naing-ngan-tha)",
+      "labelMm": "နိုင်ငံသား"
+    },
+    {
+      "en": "E",
+      "mm": "ဧည့်",
+      "label": "Associate Citizen (Aye-naing-ngan-tha)",
+      "labelMm": "ဧည့်နိုင်ငံသား"
+    },
+    {
+      "en": "P",
+      "mm": "ပြု",
+      "label": "Naturalized Citizen (Pyu-su-khwint-ya-thu)",
+      "labelMm": "နိုင်ငံသားပြုခွင့်ရသူ"
+    },
+    {
+      "en": "M",
+      "mm": "သ",
+      "label": "Monk (Tharthana-win)",
+      "labelMm": "သာသနာဝင်"
+    }
+  ]
+}
