@@ -43,6 +43,7 @@
   "files": [
     "dist",
     "data",
+    "assets/branding",
     "src/react/selector.css",
     "README.md",
     "LICENSE",

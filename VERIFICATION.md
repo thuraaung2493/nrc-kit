@@ -129,3 +129,22 @@ Verification passed:
 No dependencies, runtime baselines, package versions, publications, pushes,
 tags or releases changed. Remote CI has not run. README and changelog record
 these intentional breaking shape/language changes.
+
+## GitHub source and branding — 2026-11-15
+
+The initial implementation was committed as `9e8c8ff` and pushed to the private
+[GitHub repository](https://github.com/thuraaung2493/nrc-kit).
+[The initial CI run passed](https://github.com/thuraaung2493/nrc-kit/actions/runs/43709707855).
+
+All four Node 22/24 and React 18.2/19 CI jobs passed. Local `npm run check` also passed (119 tests, lint, types, formatting, build and clean consumers).
+
+Created a shared transparent Blackmonster logo and matching package banner with
+the built-in image-generation tool. The README displays the banner and links to
+the author profile. npm/Composer archive checks confirm the image files are
+included with the README.
+
+GitHub does not offer a first social-preview upload for a new private repository,
+so the banner is used in the README. The repositories remain private.
+Generation prompts are recorded in `assets/branding/README.md`.
+
+No registry packages, version tags or GitHub releases were published.

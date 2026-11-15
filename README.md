@@ -1,5 +1,9 @@
 # NRC Kit
 
+![Package banner by Thura Aung / Blackmonster](assets/branding/repository-banner.png)
+
+By [Thura Aung / Blackmonster](https://github.com/thuraaung2493).
+
 Parse, convert and validate Myanmar NRC numbers in English and Myanmar.
 Works offline, with optional React and Zod support.
 
