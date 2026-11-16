@@ -1,21 +1,59 @@
-# Independent releases
+# Releases
 
-This repository owns `@thuraaung2493/nrc-kit`, its changelog and its own `vX.Y.Z`
-tags. There is no shared pipeline with the Laravel package. `release-check.yml`
-is manually dispatched and produces a review artifact only. It never publishes,
-tags, pushes or creates a GitHub release.
+This repository independently releases `@thuraaung2493/nrc-kit`.
+Pushing a stable `vX.Y.Z` tag starts `release.yml`, which:
 
-Before a release, review the changelog and version, data checksum/provenance,
-optional peer constraints and compatibility matrix. Run `npm ci`, `npm run check`,
-`npm run test:matrix`, and the browser checks. Inspect `npm pack --dry-run` and
-verify clean consumers. A behavior/data correction requires a parity review and
-possibly a separate Laravel correction; releases need not share a version.
+1. Requires the tagged commit to belong to `main`, the tag to match
+   `package.json`, and the release to appear in `CHANGELOG.md`.
+2. Runs the complete Node 22/24 and React 18.2/19 CI matrix, including
+   formatting, linting, types, unit tests, clean consumers and browser checks.
+3. Builds and uploads the npm archive without publishing credentials.
+4. Publishes that archive to npm with OIDC and provenance in a separate job.
 
-Publishing, tags, pushes, npm registration/trusted-publisher configuration and
-GitHub releases all require separate explicit authorization. After authorization,
-publish the first release manually from the verified package checkout with
-`npm publish --access public`, completing npm's authentication prompts.
-For future automated releases, configure npm trusted publishing with
-least-privilege/OIDC and an approved release environment. No registry
-credentials or publish job are included in this implementation. Never publish from the local planning
-parent. Do not commit the parent's SPEC.md automatically.
+The `publish` job alone has `id-token: write`. Its `npm` deployment
+environment permits `v*` tags only. npm trusts only
+`thuraaung2493/nrc-kit`, workflow `release.yml`, environment `npm`.
+No `NPM_TOKEN` or per-release npm login is needed.
+
+## Release a version
+
+Update `package.json` and `package-lock.json` together, record the version
+in `CHANGELOG.md`, and commit and push the changes to `main`. Wait for CI
+to pass, then create and push its matching tag. For example, after preparing
+version 0.1.1:
+
+```sh
+git tag -a v0.1.1 -m 'Release 0.1.1'
+git push origin v0.1.1
+```
+
+The workflow handles publishing. Stable tags publish to npm's `latest`
+channel. Prerelease tags are rejected; they need a separately designed channel.
+Do not move release tags or reuse a published version number.
+
+Review reference-data provenance/checksums and the shared behavioral contract
+when changing data or behavior. Run the optional PHP parity check when both
+repositories are available. The Laravel package owns its own versions and tags.
+
+## Check CD without publishing
+
+```sh
+gh workflow run release.yml --ref main
+```
+
+A manual run validates the current version, runs the full CI matrix, builds
+the archive and executes `npm publish --dry-run`. It always skips the actual
+publish job and creates no tag or registry version.
+`release-check.yml` remains available as an additional archive-only check.
+
+## Trusted publisher setup
+
+The one-time configuration is:
+
+```sh
+npm trust github @thuraaung2493/nrc-kit --repo thuraaung2493/nrc-kit --file release.yml --env npm --allow-publish --yes
+```
+
+npm requires maintainer authentication for this setup. Subsequent tag-triggered
+publishes use GitHub OIDC. Do not add registry tokens to GitHub secrets or the
+repository. The workflow and environment names must match the npm configuration.
