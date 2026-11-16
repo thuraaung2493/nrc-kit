@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 0.1.0 — 2026-11-16
 
 - Breaking: added E/AE (Associate Citizen) and M (Monk); N remains Full Citizen
   and Nun is unsupported. Added localized region/type names to parsing; returned

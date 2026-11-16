@@ -5,7 +5,7 @@ Created with the built-in image-generation tool for Thura Aung / Blackmonster.
 - `blackmonster-logo.png`: transparent personal mark.
 - `repository-banner.png`: package README banner, with a 2:1 layout for future social previews.
 
-GitHub currently allows a first custom social-preview upload only for public repositories. These repositories remain private; the banners are used in their READMEs.
+The banner is displayed in the public repository README.
 
 ## Generation prompts
 

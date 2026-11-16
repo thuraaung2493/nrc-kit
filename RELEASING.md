@@ -13,7 +13,9 @@ possibly a separate Laravel correction; releases need not share a version.
 
 Publishing, tags, pushes, npm registration/trusted-publisher configuration and
 GitHub releases all require separate explicit authorization. After authorization,
-configure npm trusted publishing for this repository with least-privilege/OIDC
-and an approved release environment. No registry credentials or publish job are
-included in this initial implementation. Never publish from the local planning
+publish the first release manually from the verified package checkout with
+`npm publish --access public`, completing npm's authentication prompts.
+For future automated releases, configure npm trusted publishing with
+least-privilege/OIDC and an approved release environment. No registry
+credentials or publish job are included in this implementation. Never publish from the local planning
 parent. Do not commit the parent's SPEC.md automatically.
