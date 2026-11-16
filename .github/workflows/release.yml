@@ -59,7 +59,7 @@ jobs:
       - run: mkdir release && npm pack --pack-destination release
       - name: Dry run without publishing
         if: github.event_name == 'workflow_dispatch'
-        run: npm publish release/*.tgz --dry-run --access public
+        run: npm publish ./release/*.tgz --dry-run --access public
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
           name: npm-release-package
@@ -90,4 +90,4 @@ jobs:
           name: npm-release-package
           path: release
       - name: Publish verified archive using OIDC
-        run: npm publish release/*.tgz --access public --tag latest --provenance
+        run: npm publish ./release/*.tgz --access public --tag latest --provenance
