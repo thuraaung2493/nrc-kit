@@ -26,7 +26,7 @@ downloaded Chromium. Tests and CI never require the PHP sibling repository. For 
 maintainer parity check with both checkouts available, build first and run
 `PHP_BINARY=php node scripts/parity.mjs /path/to/laravel-nrc-kit`.
 
-[RELEASING.md](RELEASING.md) describes the independent, approval-only process.
+[RELEASING.md](RELEASING.md) describes tag-triggered CD and its publishing-free dry run.
 
 Actual phase results and compatibility limits: [VERIFICATION.md](VERIFICATION.md).
 

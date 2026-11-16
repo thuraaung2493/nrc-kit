@@ -42,7 +42,9 @@ gh workflow run release.yml --ref main
 ```
 
 A manual run validates the current version, runs the full CI matrix, builds
-the archive and executes `npm publish --dry-run`. It always skips the actual
+the archive and executes `npm publish --dry-run --force`. The dry-run-only
+`--force` permits inspecting a version that is already on npm. The actual
+publish command retains npm's existing-version checks. A manual run skips the
 publish job and creates no tag or registry version.
 `release-check.yml` remains available as an additional archive-only check.
 
