@@ -1,9 +1,9 @@
 # NRC Kit artwork
 
-- `nrc-kit-logo.png`: transparent blue N package mark with an identity-card detail.
+- `nrc-kit-logo.png`: transparent NRC card logo with blue code brackets.
 - `nrc-kit-social-preview.png`: package README banner in the shared 2:1 layout.
 
-The package-specific N mark, navy typography, blue labels and pale blue-gray
+The NRC card logo, navy typography, blue labels and pale blue-gray
 background follow the existing package banner family. The author line, title,
 purpose, features, technology label and repository URL use consistent alignment.
 
