@@ -1,6 +1,6 @@
 # NRC Kit
 
-![NRC Kit package banner](assets/branding/nrc-kit-social-preview.png)
+![NRC Kit package banner](https://raw.githubusercontent.com/thuraaung2493/nrc-kit/main/assets/branding/nrc-kit-social-preview.png)
 
 By [Thura Aung](https://github.com/thuraaung2493).
 
