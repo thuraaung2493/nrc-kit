@@ -1,11 +1,13 @@
 # NRC Kit artwork
 
-- `nrc-kit-logo.png`: transparent NRC card logo with blue code brackets.
-- `nrc-kit-social-preview.png`: package README banner in the shared 2:1 layout.
+- `nrc-kit-logo.png`: transparent NRC card logo with code brackets.
+- `nrc-kit-social-preview.png`: package banner in the shared 2:1 layout.
+- `PROMPTS.md`: final image-generation prompts.
 
-The NRC card logo, navy typography, blue labels and pale blue-gray
-background follow the existing package banner family. The author line, title,
-purpose, features, technology label and repository URL use consistent alignment.
+The artwork follows ts-expressor’s blue (#28518D), navy (#25313D),
+pale blue (#A8C7F5), and soft gray (#EDF0F3) palette. The preview uses
+an author line, package title, subtitle, features, install command, and
+repository URL. The logo uses an identity card and `<>` without a monogram
+or personal branding mark. Each package has its own portfolio entry.
 
-Created with the built-in image-generation tool for the package. The README
-banner uses the package logo; the standalone logo preserves transparency.
+Created with the built-in image-generation tool.
