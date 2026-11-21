@@ -49,6 +49,8 @@
     "data",
     "assets/branding",
     "src/react/selector.css",
+    "docs",
+    "CONTRIBUTING.md",
     "README.md",
     "LICENSE",
     "CHANGELOG.md",

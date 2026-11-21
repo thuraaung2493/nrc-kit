@@ -1,0 +1,55 @@
+{
+  "sections": [
+    {
+      "label": "Getting started",
+      "items": [
+        {
+          "label": "Overview",
+          "path": "README.md"
+        },
+        {
+          "label": "Installation",
+          "path": "docs/installation.md"
+        },
+        {
+          "label": "Quick start",
+          "path": "docs/quick-start.md"
+        }
+      ]
+    },
+    {
+      "label": "Guides",
+      "items": [
+        {
+          "label": "React selector",
+          "path": "docs/guides/react-selector.md"
+        },
+        {
+          "label": "Zod validation",
+          "path": "docs/guides/zod-validation.md"
+        },
+        {
+          "label": "Custom data",
+          "path": "docs/guides/custom-data.md"
+        }
+      ]
+    },
+    {
+      "label": "Reference",
+      "items": [
+        {
+          "label": "API reference",
+          "path": "docs/api-reference.md"
+        },
+        {
+          "label": "Data notes",
+          "path": "data/README.md"
+        },
+        {
+          "label": "Contributing",
+          "path": "CONTRIBUTING.md"
+        }
+      ]
+    }
+  ]
+}

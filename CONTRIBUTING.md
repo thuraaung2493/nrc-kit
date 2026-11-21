@@ -2,6 +2,15 @@
 
 These instructions are for developing the package, not using it in an app.
 
+## Documentation
+
+The README and `docs/` are the source for both GitHub and the portfolio
+documentation viewer. Update `docs/navigation.json` when adding or moving a
+page, and use repository-relative Markdown links so both views work. Keep the
+`installation-command` comments around the installation code block in `README.md`: the portfolio uses
+that block for its package card. Preserve README section anchors
+when moving existing content so links from older releases continue to work.
+
 ## Compatibility and development
 
 Node.js 22+; ESM and CommonJS exports with separate `.d.ts`/`.d.cts` declarations.
